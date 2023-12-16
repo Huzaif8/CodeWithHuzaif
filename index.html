@@ -25,7 +25,392 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 </head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+	/* box-sizing: border-box; */
+}
 
+/* if you want to change the font remove comment out  */
+/* body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+
+  } */
+
+/* Hover To My page Title  */
+
+.hover:hover {
+  border: 1.2px solid white;
+  /* margin: 1px; */
+}
+
+/* Whole Body Color and it's all CSS  */
+.body-color {
+  background-color: rgb(0, 0, 33);
+  color: white;
+}
+
+/* First nav bar or Header bar is started  */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(52, 152, 224);
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Hover Animation on the tabs  */
+
+nav ul li a:hover {
+  color: rgb(255, 255, 0);
+  font-size: 1.1rem;
+  text-decoration: underline White;
+}
+
+/* ----------------------  */
+
+
+/* Second Nav Bar Header Bar  */
+.second-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  background-color: rgb(116, 92, 92);
+}
+
+/* it is use to add tabs in center  */
+.second-navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* List tag dot is removed by this Code  */
+.second-navbar ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+/* Anchor tag Underline removed By Given CSS  */
+.second-navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* hover Animation Effect by given CSS  */
+.second-navbar ul li a:hover {
+  color: rgb(0, 255, 251);
+  text-decoration: underline red;
+  /* font-size: 1.1rem; */
+}
+
+/* Dropdown CSS Code  */
+
+
+
+
+/* 0000000000000  */
+
+.left {
+  font-size: 1.5rem;
+}
+
+/* b {
+  margin-right: 300px;
+} */
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 23px 0;
+  align-items: center;
+}
+
+.firstSection>div {
+  width: 30%;
+  /* margin: 70px 0; */
+}
+
+.leftSection {
+  /* background-color: red; */
+  font-size: 2.2rem;
+  /* margin: 30px 0; */
+}
+
+/* Image Tag CSS code  */
+.rightSection img {
+  width: 80%;
+}
+
+.purpul {
+  color: rgb(132, 0, 255);
+}
+
+#element {
+  color: rgb(0, 4, 255);
+}
+
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+}
+
+/* Body Section  */
+
+.bodysection {
+  margin: 4px;
+  padding: 2px;
+}
+
+
+
+
+
+
+
+/* Mobile  */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .right ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(52, 152, 224);
+  }
+
+  .right ul.active {
+    display: flex;
+  }
+
+  .right ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .leftSection {
+    /* background-color: red; */
+    font-size: 1.025rem;
+    margin-right: 70px;
+    /* margin: 30px 0; */
+  }
+
+  #bold {
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  .space {
+    height: 1px;
+    /* position: fixed; */
+  }
+
+  .rightSection img {
+    width: 110px;
+    ;
+  }
+}
+/* Footer CSS 
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+} */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.footer-container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row-footer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer {
+	background-color: #24262b;
+	padding: 70px 0;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #ffffff;
+	padding-left: 8px;
+
+}
+
+.footer-col .social-links a {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/* Facebook Hover  */
+.footer-col .social-links .facebook:hover {
+	color: #1e3c72;
+	background-color: #ffffff;
+}
+
+.footer-col .social-links .instagram:hover {
+	color: #c02655;
+	background-color: #ffffff;
+}
+
+.footer-col .social-links .twitter:hover {
+	color: #1877F2;
+	background-color: #ffffff;
+}
+
+.footer-col .social-links .linkedin:hover {
+	color: #0a6690;
+	background-color: #ffffff;
+}
+
+.last-footer {
+	background-color: #191a1c;
+	height: 60px;
+	width: 100%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.last-footer img {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border: 1px solid white;
+	margin-right: 10px;
+	background-color: rgb(0, 255, 149);
+
+}
+
+.last-footer p {
+	text-align: left;
+	display: flex;
+	justify-content: flex-start;
+	margin-right: 20px;
+}
+
+
+.vertical-line {
+	border-left: 1px solid #ddd;
+	height: 45px;
+	/* Adjust height as needed */
+}
+
+.footer-name:hover{
+	font-size: 1.1rem;
+	border: 1px solid rgb(16, 245, 241);
+}
+
+
+/*responsive*/
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 50%;
+
+	}
+}
+
+</style>
 <body>
   <div class="body-color">
     <header>
@@ -37,7 +422,7 @@
           <ul>
             <li class="hover1"><a href="#">Home </li></a>
             <li class="hover1"><a href="#">About Us</li></a>
-            <li class="hover1"><a href="/Contact.html">Contact </li></a>
+            <li class="hover1"><a href="#">Contact </li></a>
           </ul>
         </div>
       </nav>
@@ -48,7 +433,7 @@
         <ul>
           <li><a href="#">class </li></a>
           <li><a href="#">hire Us</li></a>
-          <li><a href="/Contact.html">Contact </li></a>
+          <li><a href="#">Contact </li></a>
           <!-- dropdown list  -->
         </ul>
       </nav1>
@@ -66,7 +451,7 @@
         </div>
 
         <div class="rightSection">
-          <img src="/huzaif logo.png" alt="Dev image" style="border-radius: 50%;
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJmSpPtqVukXZRB60jNnsPi777NGfSYAXMndfstW3SZ8zViBiKRH4VXMHO3AMBGJKfTPVril29y5iFmkbHKD706vFxodbT6Ly7HKESiESo5tMd8THf9k69i6oKzOiZqA0W0sfnHu9VOIFZ_nYy8_yL9RWN35SnwDeNiBR9e5UcmWWxxH_jAiLjfShF1Jw/s320/huzaif%20logo.png" alt="Dev image" style="border-radius: 50%;
           background-color: rgb(170, 225, 67); border: 4px solid white;">
         </div>
       </section>
@@ -149,7 +534,7 @@
   </footer>
   <hr />
   <div class="last-footer">
-    <img src="/huzaif logo.png" />
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJmSpPtqVukXZRB60jNnsPi777NGfSYAXMndfstW3SZ8zViBiKRH4VXMHO3AMBGJKfTPVril29y5iFmkbHKD706vFxodbT6Ly7HKESiESo5tMd8THf9k69i6oKzOiZqA0W0sfnHu9VOIFZ_nYy8_yL9RWN35SnwDeNiBR9e5UcmWWxxH_jAiLjfShF1Jw/s320/huzaif%20logo.png" />
     <p class="footer-name">Huzaif</p>
     <hr class="vertical-line" />
     <p></p>
